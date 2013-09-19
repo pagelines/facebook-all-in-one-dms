@@ -1,0 +1,65 @@
+== Description ==
+The Facebook All-In-One section combines three great Facebook Social widgets:
+Like Box, Like Button, & Comments. 
+
+Each mode allows you to easily integrate your site with the people on Facebook. 
+
+<h3>Features</h3>
+* Let user read recent posts from your Facebook Page
+* Enable users to Like your Facebook Page with one click from your website
+* Let users see how many already like your Facebook Page, and which of their friends like it too
+* Users can share your content with their friends on Facebook 
+* Users can comment on your site using their Facebook profile
+* Customizable options, size, position, & color scheme
+* Custom Open Graph Meta Tags
+* No need to copy & paste code
+
+
+== Changelog ==
+
+= 1.1.1 =
+Like Box border color and other bug fixes
+
+= 1.1.0 =
+Added option to add Facebook App ID
+Added customizable Open Graph Meta Tags
+
+= 1.0.10 =
+Fixed bug dealing with options when using PageLines Lite
+
+= 1.0.9 =
+Multi language support
+
+= 1.0.8 =
+Bug Fix dealing with width autosize
+
+= 1.0.7 =
+Bug Fix dealing with sharebar confliction
+
+= 1.0.6 =
+Fixed bug causing the sidebar to move off the bottom of the page whenever the Like Button or Comments had a width set & the section was inside the Content Area
+
+= 1.0.5 =
+* The Like Box URL & the Comments URL now have a default if left blank. The Like Box URL will default to the site's domain name. The Comments URL will default to the the entire URL of the page or post that the section is being displayed on
+
+= 1.0.4 =
+* Fixed bug that allowed the Like Button to only like Facebook pages. Now you can like any site
+* Changed options interface slightly for bug fix
+
+= 1.0.3 =
+* Added filters to page URL. 
+
+= 1.0.2 =
+* Refinements for store
+* Added changelog
+* Improved description
+* Added splash.png
+* Added screenshots
+
+= 1.0.1 =
+* Bug fixes
+* Updated Author URI
+* Updated thumb.png
+
+= 1.0.0 =
+* Initial release
