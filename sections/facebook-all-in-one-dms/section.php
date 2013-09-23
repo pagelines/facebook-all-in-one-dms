@@ -15,6 +15,7 @@ Filter: social
 */
 
 class FacebookAllInOneDMS extends PageLinesSection {
+
 	function section_opts(){
 
 		$options = array();
@@ -161,16 +162,16 @@ class FacebookAllInOneDMS extends PageLinesSection {
 					array(
 						'key'	=> 'fbheight',			
 						'type' 	=> 'text',
-						'label'	=> __( 'Height', 'facebook-all-in-one-dms' ),
-						'help'	=> __( 'Enter a custom height. (Optional)', 'facebook-all-in-one-dms' )
+						'label'	=> __( 'Height in px (optional)', 'facebook-all-in-one-dms' ),
+						'help'	=> __( 'The default height is 556px. If you hide components such as the stream or faces, you may need to adjust the height to your liking. ', 'facebook-all-in-one-dms' )
 							));
 		if(!$this->opt( 'fbfaces' )){	
 		$Likebox_Mode_B = array(
 					array(
 						'key'	=> 'fbwidth',			
 						'type' 	=> 'text',
-						'label'	=> __( '(Fake) Width', 'facebook-all-in-one-dms' ),
-						'help'	=> __( 'The Like Box is responsive, so entering a width value does not actually change the width. It does however affect the number of faces that appear. So if you want more faces, enter a value higher than the default 300. (Optional)', 'facebook-all-in-one-dms' )
+						'label'	=> __( '[Fake] Width in px (optional)', 'facebook-all-in-one-dms' ),
+						'help'	=> __( 'The Like Box is responsive, so entering a width value does not actually change the width. It does however affect the number of faces that appear. So if you want more faces, enter a value higher than the default 300.', 'facebook-all-in-one-dms' )
 						));
 		} else { $Likebox_Mode_B = array();	}
 		$Likebox_Mode_C = array_merge( $Likebox_Mode_A, $Likebox_Mode_B );
@@ -264,6 +265,7 @@ class FacebookAllInOneDMS extends PageLinesSection {
 		$options[] = array(
 				'title' => __( 'Like Button Mode', 'facebook-all-in-one-dms' ),
 				'type'	=> 'multi',
+				'help'	=> __( '<strong>If you are testing the Like Button on a localhost, you&#39;ll need to enter a Custom URL. Facebook doesn&#39;t like localhost and needs an actual URL to make the Like Button appear</strong>', 'facebook-all-in-one-dms' ),
 				'opts'	=> $Likebutton_Mode_E
 						);
 		} else {
