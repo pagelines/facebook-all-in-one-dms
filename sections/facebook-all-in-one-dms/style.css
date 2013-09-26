@@ -1,13 +1,3 @@
-
-/*
-section#facebook-all-in-one .fbautosize iframe[style], section#facebook-all-in-one .fbautosize span {width: 100%!important;}
-section#facebook-all-in-one .fbautosize, section#facebook-all-in-one .fbautosize .fb_iframe_widget {width:100%;}
-
-Make the Facebook Like box responsive (fluid width)
-https://developers.facebook.com/docs/reference/plugins/like-box/
-*/
- 
-/* This element holds injected scripts inside iframes that in some cases may stretch layouts. So, we're just hiding it. */
 #fb-root {
   display: none;
 }
