@@ -1,5 +1,5 @@
 == Description ==
-The Facebook All-In-One DMS section combines three great Facebook Social widgets:
+The Facebook All-In-One DMS section combines three great Facebook Social Widgets:
 Like Box, Like Button, & Comments. 
 
 Each mode allows you to easily integrate your site with the people on Facebook. 
@@ -12,10 +12,13 @@ Each mode allows you to easily integrate your site with the people on Facebook.
 * Users can comment on your site using their Facebook profile
 * Customizable options, size, position, & color scheme
 * Custom Open Graph Meta Tags
-* No need to copy & paste code
+* No need to configure, copy, & paste code
 
 
 == Changelog ==
+
+= 1.0.1 =
+* Bug fix: Confliction with ShareBar. Note: After update, you must flush your CSS/Less Cache. http://screencast.com/t/3PsrIJoOUQ
 
 = 1.0.0 =
 * Initial release
