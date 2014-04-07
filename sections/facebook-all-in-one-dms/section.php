@@ -1,7 +1,7 @@
 <?php
 /*
 Section: Facebook All-in-One DMS
-Version: 1.0.1
+Version: 1.1.0
 Author: MrFent
 Author URI: http://mrfent.com/
 Demo: http://facebook-all-in-one-dms.mrfent.com/
@@ -243,9 +243,9 @@ class FacebookAllInOneDMS extends PageLinesSection {
 					array(
 						'key'			=> 'fbcposts',
 						'type' 			=> 'count_select',
-						'default'		=> '10',
-						'count_number'	=> '100', 
-						'count_start'	=> '1',
+						'default'		=> 10,
+						'count_start'	=> 1,
+						'count_number'	=> 100, 
 						'label' 		=> __( 'Number of posts', 'facebook-all-in-one-dms' )
 						),
 					array(
