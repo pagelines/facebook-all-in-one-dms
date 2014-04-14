@@ -1,7 +1,7 @@
 <?php
 /*
 Section: Facebook All-in-One DMS
-Version: 1.1.0
+Version: 1.1.1
 Author: MrFent
 Author URI: http://mrfent.com/
 Demo: http://facebook-all-in-one-dms.mrfent.com/
@@ -253,6 +253,11 @@ class FacebookAllInOneDMS extends PageLinesSection {
 						'type' 			=> 'text',				
 						'label'			=> __( 'Custom URL to comment on', 'facebook-all-in-one-dms' ),	
 						'help'			=> __( 'If you want these comments to link to a page other than this one, enter the custom URL here. Otherwise, just leave this blank.<br /><br />Don&#39;t forget the <strong>http://</strong>', 'facebook-all-in-one-dms' )
+						),
+					array(
+						'key'	=> 'fbcwidth',			
+						'type' 	=> 'text',
+						'label'	=> __( 'Width', 'facebook-all-in-one-dms' ),
 						));
 		if($this->opt( 'fbmode' )){			
 		if ($mode == 'box') {
@@ -460,6 +465,10 @@ class FacebookAllInOneDMS extends PageLinesSection {
 		$facebookfriends = ( $this->opt('fbfriends') == true ) ? 'false' : 'true';
 		$facebooksend = ( $this->opt('fbsend') == true ) ? 'false' : 'true';
 		$facebookheight = ($this->opt('fbheight')) ? $this->opt('fbheight') : '556';
+		
+		//Temporary setting until Facebook fixes their responsive bug
+		$commentswidth = ($this->opt('fbcwidth')) ? $this->opt('fbcwidth') : '550';
+		
 	if 	($facebookmode == 'box' && ($this->opt( 'fbfaces' ))) { $facebookwidth = '300';	}
 	elseif ($facebookmode == 'button') { $facebookwidth = ($this->opt('fbwidth')) ? $this->opt('fbwidth') : '450'; } 
 	else { $facebookwidth = ($this->opt('fbwidth')) ? $this->opt('fbwidth') : '300'; }
@@ -518,7 +527,7 @@ class FacebookAllInOneDMS extends PageLinesSection {
 <div class="fb-comments" 
 		data-href="<?php echo $facebookcommentsurl ?>" 
 		data-num-posts="<?php echo $facebookcommentsposts ?>" 
-		data-width="<?php echo $facebookwidth ?>"
+		data-width="<?php echo $commentswidth ?>"
 		data-colorscheme="<?php echo $facebookcolorscheme ?>"
 </div>
 <?php
